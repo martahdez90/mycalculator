@@ -1,0 +1,141 @@
+body {
+    background-color: #be3c50;
+    font: 300 18px/1.6 'Paytone One', sans-serif;
+    margin: 0;
+    padding: 2em 0 2em;
+    text-align: center;
+    color: #be3c50;
+    animation: easeIn 2s ease-in 0s;
+  }
+
+  h1 {
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 5vw;
+    color: #fffeff;
+    text-shadow: 3px 1px 2px #862c3b;
+    opacity: 0%;
+    animation: intro 2s ease-in-out backwards 0.5s;
+  }
+
+  h2 {
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 5vh;
+    color: #fffeff;
+    font-size: 3vw;
+    text-shadow: 3px 1px 2px #862c3b;
+    opacity: 0%;
+    animation: apear 3s ease forwards 3.5s;
+  }
+
+  .calculator {
+    font-size: 28px;
+    margin: auto;
+    width: 10em;
+  }
+
+  calculator::before, calculator::after {
+    content: " ";
+    display: table;
+  }
+
+  calculator::after  {
+    clear: both;
+} 
+
+  .viewer {
+    line-height: 3em;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 9.5em;
+    height: 3em;
+    border-radius: 12px;
+    background: #ecd0d4;
+    box-shadow: inset 10px 10px 19px #b8a2a5, 
+                inset -10px -10px 19px #fffeff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    animation: apear 3s ease forwards 3.5s;
+  }
+
+  button {
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b83d50, #9b3344);
+    box-shadow:  4px 4px 8px #862c3b, 
+             -4px -4px 8px #d2465c;
+    color: rgb(200, 255, 225);
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
+    opacity: 0%;
+    animation: apear 3s ease forwards 3.5s;
+  }
+
+  #equals {
+    width: 9.5em;
+  }
+
+@keyframes apear {
+    from {
+      opacity: 0%;
+      /* transform: rotate(20deg); */
+    }
+    to {
+      opacity: 100%;
+      /* transform: rotate(0deg); */
+    }
+  }
+@keyframes easeIn {
+    0% {
+      background-color: #ecd0d4;
+      /* transform: rotate(20deg); */
+    }
+
+    50% {
+      background-color: #862c3b;
+    }
+    100% {
+      background-color: #be3c50;
+      /* transform: rotate(0deg); */
+    }
+  }
+
+
+  @keyframes intro {
+    from {
+      opacity: 0%;
+      /* transform: rotate(20deg); */
+      display: block;
+    }
+    to {
+      opacity: 100%;
+      /* transform: rotate(0deg); */
+      display: none;
+    }
+  }
+
+  @media (max-width: 900px){
+    h2{
+      font-size: 10vw;
+    }
+    h1 {
+      font-size: 8vw;
+      margin: 0%;
+    }
+  }
+
+  

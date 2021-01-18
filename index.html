@@ -1,0 +1,66 @@
+<!-- we need to add doctype, html and meta -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Include meta tags for SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta
+      name="description"
+      content="Payvision calculator"
+    />
+    <meta name="robots" content="index,follow" />
+  <title>Payvision Calculator</title>
+  <!-- Add css  -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Add favicon  -->
+
+  <link rel="icon" href="./favicon.png" type="image/png" sizes="32x32">
+
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1>¡LETS PRACTICE SOME MATHS!</h1>
+ <h2>Payvision Calculator</h2>
+
+<!-- add main to improve accesibility -->
+<main id="calculator" class="calculator">
+
+  <div id="viewer" class="viewer">
+    <p>0</p>
+  </div>
+
+<button id="btn7" class="num" data-num="7">7</button>
+<button id="btn8" class="num" data-num="8">8</button>
+<button id="btn9" class="num" data-num="9">9</button>
+  
+  
+  <button id="btnPlus" data-ops="plus" class="ops">+</button>
+
+  <button id="btn4" class="num" data-num="4">4</button>
+  <button id="btn5" class="num" data-num="5">5</button>
+  <button id="btn6" class="num" data-num="6">6</button>
+  <button id="btnMinus" data-ops="minus" class="ops">-</button>
+
+  <button id="btn1" class="num" data-num="1">1</button>
+  <button id="btn2" class="num" data-num="2">2</button>
+  <button id="btn3" class="num" data-num="3">3</button>
+  <button id="btnMult" data-ops="mult" class="ops">x</button>
+
+  <button id="clear" class="clear">C</button>
+  <button id="btn0" class="num" data-num="0">0</button>
+  <button id="btnDot" class="num" data-num=".">.</button>
+  <button id="btnDiv" data-ops="div" class="ops">/
+
+  <button id="equals" class="equals" data-result="">=</button>
+  
+  </button>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
+
